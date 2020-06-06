@@ -1,0 +1,37 @@
+.form {
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    display: block;
+    max-width: 500px;
+    margin: 0.75rem auto;
+    padding: 1rem;
+}
+
+.label,
+.input {
+    display: block;
+}
+
+.label {
+    letter-spacing: 0.1em;
+}
+
+.input {
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+    width: 100%;
+    padding: 0.25rem;
+}
+
+.button {
+    background: darkblue;
+    border: 1px solid darkblue;
+    cursor: pointer;
+    color: white;
+    border-radius: 0.25rem;
+    display: block;
+    padding: 0.25rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
