@@ -36,14 +36,23 @@ const Form = () => {
     };
 
     const handleSubmit = e => {
-        console.log('clicked');
         e.preventDefault();
-        // setStatus('PENDING');
-        // todo: actually send message
-        setStatus('SUCCESS');
+        setStatus('PENDING');
+        
+        fetch('/api/contact', {
+            method: 'POST',
+            body: JSON.stringify(state)
+        })
+            .then(response => response.json())
+            .then(response => {
+                console.log(response);
+                setStatus('SUCCESS');
+            })
+            .catch(error => {
+                console.log(error);
+                setStatus('ERROR');
+            });
     }
-
-    console.log(state.status);
 
     if (state.status === 'SUCCESS') {
         return (
