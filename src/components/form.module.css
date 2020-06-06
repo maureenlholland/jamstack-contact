@@ -35,3 +35,24 @@
     font-size: 0.8rem;
     text-transform: uppercase;
 }
+
+.success,
+.error {
+    border-radius: 0.25rem;
+    display: block;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.success {
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.pending {
+    border: 5px solid gray;
+}
